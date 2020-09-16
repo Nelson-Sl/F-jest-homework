@@ -1,4 +1,4 @@
-import Recipient from "../Recipient";
+import Recipient from "../recipient";
 
 describe("acceptInjection", () => {
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe("acceptInjection", () => {
     jest.doMock("../covid19Vaccine", () => {
       return jest.fn().mockImplementation(() => {
         return {
-          composition: [],
+          composition: ["sugar"],
         };
       });
     });
